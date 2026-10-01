@@ -1,0 +1,35 @@
+[project]
+name = "agentic-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "google-generativeai>=0.8.6",
+    "httpx>=0.28.1",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "langchain>=1.4.3",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.6",
+    "langchain-google-genai>=4.4.0",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.12",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "pypdf>=6.19.0",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "sentence-transformers>=6.1.0",
+    "streamlit>=1.64.0",
+    "tavily-python>=0.8.4",
+]
+
+[project.scripts]
+agentic-rag = "agentic_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
